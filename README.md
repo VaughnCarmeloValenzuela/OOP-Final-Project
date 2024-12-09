@@ -21,11 +21,11 @@ customers by automating library procedures.
 
 ### Features:
 
-* **Register Members** 
+* **Register / Log in** 
 * **Add New Books**
 * **Borrow Books**
 * **Return Books**
-* **Reserve Books** 
+* **Search Books** 
 * **View Member Profiles**
 
 ### OOP Implementation
