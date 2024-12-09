@@ -32,38 +32,21 @@ customers by automating library procedures.
 
 *1. Encapsulation:*
 
-> Book and Member classes: Both classes encapsulate data (attributes
-> like title, author, genre, available status, etc.) and methods
-> (operations like toString(), addReservation(), etc.) that work with
-> that data. This hides the internal implementation details from the
-> outside world, making the code more maintainable and preventing
-> unintended modifications.
+> The attributes of classes like LibraryItem, Book, and Member are declared as private, ensuring that they cannot be accessed directly from outside the class.
 
 *2. Abstraction:*
 
-> Book and Member classes: These classes act as abstract representations
-> of real-world entities. They define the essential characteristics and
-> behaviors of books and members in the library context, without
-> revealing the specific implementation details. This allows for
-> flexibility and future changes without impacting other parts of the
-> system.
+> Abstract Class: The use of an abstract class (LibraryItem) allows you to define a template for all library items without specifying how each item's details are displayed or managed.
+Interface: The LibraryOperations interface defines a contract for library operations without providing implementation details. Classes like LibraryManagementSystem implement this interface, ensuring they adhere to the defined operations:
 
 *3. Inheritance (Not Explicitly Used):*
 
-> Reusability: The Book class inherits from LibraryItem, reusing the
-> common attributes and methods defined in the parent class. This saves
-> code and makes the system more maintainable.
->
-> Specialization: The Book class extends the LibraryItem class by adding
-> its own unique features, like the genre attribute, and overriding
-> methods like borrow() and returnItem() to provide book-specific
-> behavior.
+> LibraryItem is an abstract class that defines common attributes and methods for all library items. The Book class extends LibraryItem, inheriting its properties and methods while also adding specific features
 
 *4. Polymorphism:*
 
-> toString() method: The toString() method is overridden in both Book
-> and Member classes. This allows for different representations of these
-> objects when printed, demonstrating polymorphism.
+> Method Overriding: The displayDetails() method in the Book class overrides the abstract method defined in LibraryItem. This allows each subclass to provide its own implementation
+> Polymorphic Method Calls: The borrowItem(LibraryItem item) method in LibraryManagementSystem can accept any subclass of LibraryItem, demonstrating polymorphic behavior
 
 ### SDG 4 Integration
 
