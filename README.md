@@ -63,5 +63,4 @@ primary and secondary education.
 
 The **BOOK LOOT: Library Management System** can be understood and used with the help of this README. To make it even more reliable and practical, feel free to experiment with the code and add your own improvements! 
   
-### How to Use:
 
